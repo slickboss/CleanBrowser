@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_main">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <Button
+          android:id="@+id/btnBack"
+          android:layout_width="48dp"
+          android:layout_height="wrap_content"
+          android:text="@string/back"
+     />
+    <Button
+        android:id="@+id/btnFront"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btnBack"
+        android:text="@string/next"
+        />
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:text="@string/go"
+        android:layout_alignParentRight="true"
+
+        />
+
+<EditText
+    android:id="@+id/edtTxt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxLines="1"
+    android:layout_toRightOf="@+id/btnFront"
+    android:layout_toLeftOf="@id/btnGo"
+    />
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
